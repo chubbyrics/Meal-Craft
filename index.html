@@ -166,7 +166,32 @@
     </section>
 
     <section class="services-section section-pad" id="inquire"><div class="service-panel reveal-scale"><div class="service-copy"><div class="section-kicker light">05 / Let’s plan together</div><h2>A menu that meets<br><em>you where you are.</em></h2><p>Tell us what your days look like. We’ll shape a practical, personal menu plan around your dietary needs, favorite flavors, budget, and lifestyle.</p><div class="service-pills"><span>Dietary needs</span><span>Food preferences</span><span>Budget</span><span>Lifestyle</span></div><a class="cream-button" href="#inquiry-form">Start an inquiry ↗</a></div><div class="service-orbit"><span class="orbit-label">Made for real life</span><div class="circle-back"></div><div class="circle-front">MC</div><div class="service-sticker">✳<small>good food,<br>thoughtfully planned</small></div></div></div>
-      <div class="inquiry-grid" id="inquiry-form"><div><div class="section-kicker">A small note to begin</div><h3>What would make<br><em>this week easier?</em></h3><p class="inquiry-sub">Leave us a few details and we’ll get back to you within 2–3 kitchen days.</p><div class="contact-list"><span>✉ hello@mealcraft.ph</span><span>@ @mealcraft.studio</span></div></div><form class="inquiry-form" id="inquiryForm"><div class="form-row"><label>Your name<input required placeholder="e.g. Andrea Santos"></label><label>Email address<input required type="email" placeholder="you@email.com"></label></div><label>What are you looking for?<select required><option value="" disabled selected>Choose a starting point</option><option>Personal meal plan</option><option>Recipe guidance</option><option>Nutrition & pantry reset</option></select></label><label>A little more context<textarea placeholder="Tell us about your household, schedule, or food goals..." rows="3"></textarea></label><button class="primary-button" type="submit">Send your note <span>↗</span></button><p class="form-success" id="formSuccess" hidden>Inquiry noted — we’ll be in touch soon.</p></form></div>
+      <div class="inquiry-grid" id="inquiry-form"><div><div class="section-kicker">A small note to begin</div><h3>What would make<br><em>this week easier?</em></h3><p class="inquiry-sub">Leave us a few details and we’ll get back to you within 2–3 kitchen days.</p><div class="contact-list"><span>✉ hello@mealcraft.ph</span><span>@ @mealcraft.studio</span></div></div><<form class="inquiry-form" id="inquiryForm">
+        <div class="form-row">
+          <label>Your name
+            <input type="text" id="userName" name="userName" autocomplete="name" required placeholder="e.g. Andrea Santos">
+          </label>
+          <label>Email address
+            <input type="email" id="userEmail" name="userEmail" autocomplete="email" required placeholder="you@email.com">
+          </label>
+        </div>
+        
+        <label>What are you looking for?
+          <select id="serviceType" name="serviceType" required>
+            <option value="" disabled selected>Choose a starting point</option>
+            <option value="meal-plan">Personal meal plan</option>
+            <option value="recipe-guidance">Recipe guidance</option>
+            <option value="pantry-reset">Nutrition & pantry reset</option>
+          </select>
+        </label>
+        
+        <label>A little more context
+          <textarea id="messageContext" name="messageContext" placeholder="Tell us about your household, schedule, or food goals..." rows="3"></textarea>
+        </label>
+        
+        <button class="primary-button" type="submit">Send your note <span>↗</span></button>
+        <p class="form-success" id="formSuccess" hidden>Inquiry noted — we’ll be in touch soon.</p>
+      </form></div>
     </section>
   </main>
 

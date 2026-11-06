@@ -1,0 +1,53 @@
+{
+  "note": "Images selected from online search results and stored locally for the demo. Replace with licensed or owned images before public launch.",
+  "images": [
+    {
+      "file": "assets/recipe-images/pork-adobo.jpg",
+      "title": "Filipino Pork Adobo - RecipeTin Eats",
+      "sourceUrl": "https://files.manuscdn.com/search-media/310519663481343976/5CYLMwcRiP4PQfRyLe0mfm/apDGbhUixzXtweT64ZTJLe.jpg",
+      "localCopy": true
+    },
+    {
+      "file": "assets/recipe-images/lechon-kawali.jpg",
+      "title": "Lechon Kawali (Filipino Crispy Fried Pork Belly) Recipe",
+      "sourceUrl": "https://files.manuscdn.com/search-media/310519663481343976/5CYLMwcRiP4PQfRyLe0mfm/Napwk3HfTZiGWGUVJgiR4h.jpg",
+      "localCopy": true
+    },
+    {
+      "file": "assets/recipe-images/chicken-adobo.jpg",
+      "title": "Chicken Adobo (Filipino-Style Braised Chicken)",
+      "sourceUrl": "https://files.manuscdn.com/search-media/310519663481343976/5CYLMwcRiP4PQfRyLe0mfm/7tGv5igszkhFYJ2x36srrL.jpg",
+      "localCopy": true
+    },
+    {
+      "file": "assets/recipe-images/halo-halo.jpg",
+      "title": "Halo-Halo",
+      "sourceUrl": "https://files.manuscdn.com/search-media/310519663481343976/5CYLMwcRiP4PQfRyLe0mfm/hVSN3founUkXhRCtUT2cMR.jpeg",
+      "localCopy": true
+    },
+    {
+      "file": "assets/recipe-images/pesang-isda.jpg",
+      "title": "Pesang Isda Recipe (Fish in Ginger Broth)",
+      "sourceUrl": "https://files.manuscdn.com/search-media/310519663481343976/5CYLMwcRiP4PQfRyLe0mfm/DqoDs7RncjaC6fj6sqw2W8.jpg",
+      "localCopy": true
+    },
+    {
+      "file": "assets/recipe-images/lumpia.jpg",
+      "title": "Traditional Filipino Lumpia",
+      "sourceUrl": "https://files.manuscdn.com/search-media/310519663481343976/5CYLMwcRiP4PQfRyLe0mfm/XtD3QV3WSWKKbLwgEVaus7.jpg",
+      "localCopy": true
+    },
+    {
+      "file": "assets/recipe-images/sisig.jpg",
+      "title": "Sisig (Filipino meat salad)",
+      "sourceUrl": "https://files.manuscdn.com/search-media/310519663481343976/5CYLMwcRiP4PQfRyLe0mfm/9aXhvDcxDmV7HcB8cPCn5c.jpg",
+      "localCopy": true
+    },
+    {
+      "file": "assets/recipe-images/sinigang.jpg",
+      "title": "Sinigang na Baboy (Filipino Pork in Sour Tamarind Soup) Recipe",
+      "sourceUrl": "https://files.manuscdn.com/search-media/310519663481343976/5CYLMwcRiP4PQfRyLe0mfm/jaEYL99Y52SWiD37raSjyc.jpg",
+      "localCopy": true
+    }
+  ]
+}

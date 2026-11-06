@@ -1,4 +1,5 @@
-const categories = ['All','Pork','Beef','Chicken','Seafood','Fish','Side dishes','Appetizers','Soups','Desserts','Beverages'];
+const categoryIcons = { All: '<svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>', Pork: '<svg viewBox="0 0 24 24"><path d="M6 15c0-4 2-7 6-7s6 3 6 7H6Z"/><path d="M9 8V5m6 3V5M8 18h8"/></svg>', Beef: '<svg viewBox="0 0 24 24"><path d="M5 14c0-5 3-8 7-8s7 3 7 8H5Z"/><path d="M8 14v3m8-3v3"/></svg>', Chicken: '<svg viewBox="0 0 24 24"><path d="M8 15c-3 0-4-4-1-6 2-1 4 0 5 2 2-3 7-1 7 2 0 3-3 5-6 4l-2 2H7"/></svg>', Seafood: '<svg viewBox="0 0 24 24"><path d="M3 12c4-6 10-6 18 0-8 6-14 6-18 0Z"/><circle cx="8" cy="11" r="1"/><path d="M3 12 1 9m2 3-2 3"/></svg>', Fish: '<svg viewBox="0 0 24 24"><path d="M3 12c4-5 9-6 15-3l3-2-1 5 1 5-3-2c-6 3-11 2-15-3Z"/><circle cx="8" cy="11" r="1"/></svg>', 'Side dishes': '<svg viewBox="0 0 24 24"><path d="M4 14h16c0 4-3 6-8 6s-8-2-8-6Z"/><path d="M6 14 5 7m4 7V5m4 9V7m4 7-1-5"/></svg>', Appetizers: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="14" r="1"/></svg>', Soups: '<svg viewBox="0 0 24 24"><path d="M4 13h16c0 4-3 7-8 7s-8-3-8-7Zm2-4c0-2 2-2 2-4m4 4c0-2 2-2 2-4m2 4c0-2 2-2 2-4"/></svg>', Desserts: '<svg viewBox="0 0 24 24"><path d="M5 13h14c0 4-3 7-7 7s-7-3-7-7Zm2-4h10l-1 4H8L7 9Z"/><path d="M9 6h6"/></svg>', Beverages: '<svg viewBox="0 0 24 24"><path d="M7 4h10l-1 16H8L7 4Zm0 4h10m-7-7h4"/></svg>' };
+const categories = Object.keys(categoryIcons);
 const categoryImages = {Pork:'assets/hero.jpg',Beef:'assets/beef.jpg',Chicken:'assets/chicken.jpg',Seafood:'assets/seafood.jpg',Fish:'assets/hero.jpg','Side dishes':'assets/greens.jpg',Appetizers:'assets/spring-roll.jpg',Soups:'assets/soup.jpg',Desserts:'assets/dessert.jpg',Beverages:'assets/cooler.jpg'};
 let recipes = [];
 let guidance = {documents: []};
@@ -13,7 +14,7 @@ function recipeImage(recipe) {
 }
 function displayTime(recipe) { return [recipe.prepTime, recipe.cookTime].filter(Boolean).join(' + ') || 'See recipe'; }
 function renderCategories() {
-  $('#categoryTabs').innerHTML = categories.map(category => `<button class="${category === activeCategory ? 'active' : ''}" data-category="${category}">${category}</button>`).join('');
+  $('#categoryTabs').innerHTML = categories.map(category => `<button class="${category === activeCategory ? 'active' : ''}" data-category="${category}"><span class="category-icon">${categoryIcons[category]}</span><span>${category}</span></button>`).join('');
   $$('#categoryTabs button').forEach(button => button.addEventListener('click', () => { activeCategory = button.dataset.category; renderCategories(); renderRecipes(); }));
 }
 function renderRecipes() {
